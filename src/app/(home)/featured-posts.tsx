@@ -62,7 +62,6 @@ const BlogPostsListFallback = () => {
 
 const FeaturedBlogPostsList = async () => {
   const featuredPosts = await getFeaturedPosts();
-  console.log('featuredPosts', featuredPosts);
   return (
     <>
       {featuredPosts.map((post) => (
@@ -79,39 +78,32 @@ export const FeaturedBlogPosts = () => (
     <div
       className={cx(
         'w-full flex flex-col items-start gap-4',
-        'tablet-sm:flex-row tablet-sm:items-center tablet-sm:justify-between',
+        'mobile-md:flex-row mobile-md:items-center mobile-md:justify-between',
       )}
     >
       <h2 className={getColoredTextClasses('orange')}>From the blog</h2>
-      <div
-        className={cx(
-          'flex flex-row flex-1 items-center gap-4 self-end w-full',
-          'tablet-sm:w-auto tablet-sm:justify-end',
-        )}
-      >
-        {/* <RSSFeedButton
+      {/* <RSSFeedButton
           className={'max-mobile-lg:justify-center max-mobile-lg:flex-1'}
         /> */}
 
-        <OutlinedLinkButton
-          title={'View all'}
-          href={'/blog'}
-          className={cx(
-            'pr-3.5',
-            'justify-center max-mobile-lg:flex-1',
-            'mobile-lg:self-start mobile-lg:justify-start',
-          )}
-          data-umami-event={'View all blog posts'}
-        >
-          <Icon
-            className={'size-5'}
-            path={
-              'M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z'
-            }
-          />
-          <span>View all</span>
-        </OutlinedLinkButton>
-      </div>
+      <OutlinedLinkButton
+        title={'View all'}
+        href={'/blog'}
+        className={cx(
+          'pr-3.5',
+          'justify-center max-mobile-lg:flex-1',
+          'mobile-lg:self-start mobile-lg:justify-start',
+        )}
+        data-umami-event={'View all blog posts'}
+      >
+        <Icon
+          className={'size-5'}
+          path={
+            'M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z'
+          }
+        />
+        <span>View all</span>
+      </OutlinedLinkButton>
     </div>
 
     <ol className={'flex flex-col gap-2'}>
