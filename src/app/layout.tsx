@@ -57,9 +57,8 @@ export default function RootLayout(props: PropsWithChildren) {
       <head>
         <Meta />
         <Script
-          src={'https://umami.jahir.dev/script.js'}
+          src={'https://umami-five-iota.vercel.app/script.js'}
           data-website-id={umamiWebsiteId}
-          data-domains={'jahir.dev'}
           strategy={'lazyOnload'}
         />
       </head>
