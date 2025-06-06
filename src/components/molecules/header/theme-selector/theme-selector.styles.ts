@@ -13,6 +13,7 @@ export const ThemeSelectorContainer = tw.div`
   text-accent
   relative
   hocus:text-accent-dark
+  cursor-pointer
 `;
 
 export const ThemeSelect = tw.select`

@@ -37,11 +37,20 @@ export const ThemeSelector = () => {
   }, [hasMounted, theme, isDark]);
 
   return (
-    <ThemeSelectorContainer>
+    <ThemeSelectorContainer
+      onClick={() => {
+        const newTheme = theme == 'light' ? 'dark' : 'light';
+        try {
+          // @ts-expect-error Client only
+          window.umami.track('Switch theme', { theme: newTheme });
+        } catch (e) {}
+        setTheme?.(newTheme);
+      }}
+    >
       <label htmlFor={'theme-switch'} className={'sr-only'}>
         {selectorText}
       </label>
-      <ThemeSelect
+      {/* <ThemeSelect
         id={'theme-switch'}
         name={'theme-switch'}
         title={selectorText}
@@ -62,7 +71,7 @@ export const ThemeSelector = () => {
           <option value={'light'}>Light</option>
           <option value={'dark'}>Dark</option>
         </optgroup>
-      </ThemeSelect>
+      </ThemeSelect> */}
       <ThemeIconContainer>
         <Icon
           path={icon}

@@ -71,7 +71,7 @@ input[type='checkbox'] {
 }
 
 *:focus {
-  outline: 2px dashed var(--color-secondary-txt);
+  outline: 2px var(--color-secondary-txt);
   outline-offset: 0.25rem;
 }
 
