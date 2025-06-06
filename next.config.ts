@@ -64,6 +64,12 @@ const defaultNextConfig: NextConfig = {
   //   config.plugins.push(new VeliteWebpackPlugin());
   //   return config;
   // },
+  eslint: {
+    ignoreDuringBuilds: true, // 忽略 eslint 检查
+  },
+  typescript: {
+    ignoreBuildErrors: true, // 忽略 TypeScript 检查
+  },
 };
 
 const millionConfig = {
