@@ -3,7 +3,7 @@ import type { Header } from 'next/dist/lib/load-custom-routes';
 const ContentSecurityPolicy = `
   default-src 'self' vercel.live;
   worker-src 'self' blob:;
-  'self' 'unsafe-eval' 'unsafe-inline';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.vercel.app;
   child-src *.scdn.co *.spotify.com *.jahir.dev unavatar.now.sh *.unavatar.io;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
