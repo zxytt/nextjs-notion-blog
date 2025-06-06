@@ -63,7 +63,7 @@ export default function UsesPage() {
 }
 
 export const metadata = createMetadata({
-  title: 'Uses – Jahir Fiquitiva',
+  title: 'Uses – Jason Zhang',
   description:
     'Get to know the hardware, software and tools I use on a daily basis',
   exactUrl: 'https://jahir.dev/uses',

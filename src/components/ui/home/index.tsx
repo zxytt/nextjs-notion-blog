@@ -20,9 +20,9 @@ export const Intro = () => {
       >
         <Img
           src={photo}
-          alt={'Photo of Jahir Fiquitiva'}
-          width={160}
-          height={160}
+          alt={'Photo of Jason Zhang'}
+          width={140}
+          height={140}
           priority
           className={cx(
             'rounded-full tablet-sm:float-right',
@@ -42,7 +42,7 @@ export const Intro = () => {
           </p>
           <SubHeader>
             <span>
-              I am <Name>Jahir Fiquitiva</Name>
+              I am <Name>Jason Zhang</Name>
             </span>
             <Verified />
           </SubHeader>
@@ -50,26 +50,17 @@ export const Intro = () => {
 
         <p className={'text-pretty flex flex-col gap-2 max-w-[28rem]'}>
           <span>
-            Passionate and creative frontend software engineer from{' '}
-            <Link
-              title={'Colombia'}
-              href={'https://www.google.com/maps/place/Colombia/@4,-72z/'}
-              data-umami-event={'Link to Colombia map'}
-            >
-              Colombia{' '}
-              <span role={'img'} aria-label={'Colombia flag'}>
-                🇨🇴
-              </span>
-            </Link>
+            Passionate and creative frontend software engineer from China{' '}
+            <span role={'img'} aria-label={'Colombia flag'}></span>
           </span>
-          <span>
+          {/* <span>
             Detail-driven, I strive to build great-looking, user-friendly
             software while enhancing my skills along the way
-          </span>
+          </span> */}
         </p>
       </div>
 
-      <div
+      {/* <div
         className={cx(
           'flex flex-col gap-3 items-center',
           'mobile-lg:flex-row mobile-lg:flex-wrap',
@@ -94,7 +85,7 @@ export const Intro = () => {
           <span>More about me</span>
         </LinkButton>
         <SocialLinks />
-      </div>
+      </div> */}
     </Section>
   );
 };

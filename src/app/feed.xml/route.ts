@@ -114,16 +114,16 @@ const defaultChannel = {
   lastBuildDate: new Date().toUTCString(),
   language: 'en-US',
   link: 'https://jahir.dev',
-  title: 'Jahir Fiquitiva',
+  title: 'Jason Zhang',
   description:
     'Passionate and creative frontend software engineer from Colombia',
   image_url: 'https://jahir.dev/api/og',
   image: {
-    title: 'Jahir Fiquitiva',
+    title: 'Jason Zhang',
     link: 'https://jahir.dev',
     url: 'https://jahir.dev/api/og',
   },
-  copyright: `All rights reserved ${new Date().getFullYear()}, Jahir Fiquitiva`,
+  copyright: `All rights reserved ${new Date().getFullYear()}, Jason Zhang`,
 };
 
 export async function GET() {

@@ -33,7 +33,7 @@ const blogPostStructuredData = (post?: PartialBlog): string => {
     url: `https://jahir.dev/blog/${post.slug}`,
     author: {
       '@type': 'Person',
-      name: 'Jahir Fiquitiva',
+      name: 'Jason Zhang',
       url: 'https://jahir.dev/about',
     },
   });
@@ -114,8 +114,8 @@ export async function generateMetadata(
 
   const { title, date, summary } = post;
   const metadata = createMetadata({
-    title: `${title} | Blog – Jahir Fiquitiva`,
-    description: summary || 'Blog post by Jahir Fiquitiva',
+    title: `${title} | Blog – Jason Zhang`,
+    description: summary || 'Blog post by Jason Zhang',
     exactUrl: `https://jahir.dev/blog/${slug}`,
     keywords: post.keywords,
   });

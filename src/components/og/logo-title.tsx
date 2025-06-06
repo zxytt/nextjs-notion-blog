@@ -64,7 +64,7 @@ export const PageTitle = (props: {
             }),
       }}
     >
-      {title || pathTitle || 'Jahir Fiquitiva'}
+      {title || pathTitle || 'Jason Zhang'}
     </p>
   );
 };

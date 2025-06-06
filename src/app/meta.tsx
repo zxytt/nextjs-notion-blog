@@ -32,7 +32,7 @@ export const Meta = () => {
         rel={'alternate'}
         href={'/feed.xml'}
         type={'application/rss+xml'}
-        title={'Jahir Fiquitiva (RSS)'}
+        title={'Jason Zhang (RSS)'}
       />
 
       {colorMetaTags.map((tag) => (

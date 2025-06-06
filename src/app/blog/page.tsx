@@ -10,7 +10,7 @@ export default function BlogPage() {
     <Section id={'blog'} className={'gap-6'}>
       <div className={'flex flex-row gap-4 items-center justify-between'}>
         <h1 className={getColoredTextClasses('orange')}>Blog</h1>
-        <RSSFeedButton />
+        {/* <RSSFeedButton /> */}
       </div>
       <GroupedBlogPosts />
     </Section>
@@ -18,10 +18,10 @@ export default function BlogPage() {
 }
 
 export const metadata = createMetadata({
-  title: 'Blog – Jahir Fiquitiva',
+  title: 'Blog – Jason Zhang',
   description:
     // eslint-disable-next-line @stylistic/max-len
-    'Blog posts by Jahir Fiquitiva. Here I share some thoughts, stories, information and more about software development, programming, tech or my personal life',
+    'Blog posts by Jason Zhang. Here I share some thoughts, stories, information and more about software development, programming, tech or my personal life',
   exactUrl: 'https://jahir.dev/blog',
   keywords: [
     'tech',

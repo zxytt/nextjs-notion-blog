@@ -1,5 +1,5 @@
 import { Icon } from '@/components/atoms/icon';
-import { LinkButton } from '@/components/atoms/link-button';
+import { OutlinedLinkButton } from '@/components/atoms/link-button';
 import { Section } from '@/components/atoms/section';
 import { projects as allProjects } from '@/content';
 import { getColoredTextClasses } from '@/utils/colored-text';
@@ -30,7 +30,7 @@ export const ProjectsList = (props: ProjectsListProps) => {
           {props.title}
         </Heading>
         {props.featuredOnly ? (
-          <LinkButton
+          <OutlinedLinkButton
             title={'View all'}
             href={'/projects'}
             className={cx(
@@ -47,7 +47,7 @@ export const ProjectsList = (props: ProjectsListProps) => {
               }
             />
             <span>View all</span>
-          </LinkButton>
+          </OutlinedLinkButton>
         ) : null}
       </div>
       <ul>

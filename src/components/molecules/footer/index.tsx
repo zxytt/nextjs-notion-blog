@@ -19,7 +19,7 @@ export const Footer = () => {
     <StyledFooter>
       <Details>
         <FooterLink
-          title={'Jahir Fiquitiva - Home Page'}
+          title={'Jason Zhang - Home Page'}
           href={'/'}
           className={cx(
             'self-start',
@@ -30,15 +30,15 @@ export const Footer = () => {
           )}
         >
           <Logo />
-          <span className={'text-accent'}>Jahir Fiquitiva</span>
+          <span className={'text-accent'}>Jason Zhang</span>
         </FooterLink>
         <Description>
-          Passionate and creative frontend software engineer from Colombia{' '}
+          Passionate and creative frontend software engineer from China{' '}
           <span role={'img'} aria-label={'Colombia flag'}>
             🇨🇴
           </span>
         </Description>
-        <SocialLinks className={'-ml-1.5'} />
+        {/* <SocialLinks className={'-ml-1.5'} /> */}
       </Details>
       {linksGroups.map((group) => {
         return (

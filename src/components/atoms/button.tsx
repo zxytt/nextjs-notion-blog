@@ -51,7 +51,7 @@ export const Button = tw.button.attrs<ButtonProps>((p) => ({
 
 export const OutlinedButton = tw(Button)`
   bg-brand-200/5
-  text-secondary-txt
+  text-accent
   transition
   ring-divider
   hocus:ring-divider

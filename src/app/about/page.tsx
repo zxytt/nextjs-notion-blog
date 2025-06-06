@@ -17,7 +17,7 @@ const jsonLd = JSON.stringify({
   mainEntity: {
     '@id': '#main-author',
     '@type': 'Person',
-    name: 'Jahir Fiquitiva',
+    name: 'Jason Zhang',
     alternateName: ['jahirfiquitiva', 'jahirdotdev'],
     description:
       'Passionate and creative frontend software engineer from Colombia 🇨🇴',
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <span role={'img'} aria-label={'waving hand'}>
             👋
           </span>{' '}
-          Hey there! I&apos;m Jahir Fiquitiva, a frontend software engineer from{' '}
+          Hey there! I&apos;m Jason Zhang, a frontend software engineer from{' '}
           <Link
             title={'Colombia'}
             href={'https://www.google.com/maps/place/Colombia/@4,-72z/'}
@@ -115,8 +115,8 @@ export default function AboutPage() {
 }
 
 export const metadata = createMetadata({
-  title: 'About – Jahir Fiquitiva',
-  description: 'Learn more about me (Jahir Fiquitiva), my career and more',
+  title: 'About – Jason Zhang',
+  description: 'Learn more about me (Jason Zhang), my career and more',
   exactUrl: 'https://jahir.dev/about',
   keywords: ['bio', 'biography', 'information', 'about', 'career'],
 });

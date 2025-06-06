@@ -9,9 +9,9 @@ export const Main = tw.main.attrs({ style: { maxWidth: MAX_SITE_WIDTH } })`
   pt-28
   px-3
   pb-8
-  gap-14
+  gap-8
   w-full
   mx-auto
-  tablet-md:pt-32
+  tablet-md:pt-28
   tablet-md:px-0
 `;

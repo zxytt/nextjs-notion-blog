@@ -19,11 +19,6 @@ import { ThemeSelector } from './theme-selector';
 
 const toolbarLinksList = [
   {
-    title: 'About',
-    href: '/about',
-    className: 'text-green',
-  },
-  {
     title: 'Blog',
     href: '/blog',
     className: 'text-orange',
@@ -34,10 +29,15 @@ const toolbarLinksList = [
     className: 'text-purple',
   },
   {
-    title: 'Uses',
-    href: '/uses',
-    className: 'text-blue',
+    title: 'About',
+    href: '/about',
+    className: 'text-green',
   },
+  // {
+  //   title: 'Uses',
+  //   href: '/uses',
+  //   className: 'text-blue',
+  // },
 ];
 
 interface NavbarProps extends TWComponentProps<typeof Nav> {
@@ -51,14 +51,14 @@ export const Navbar = (props: NavbarProps) => {
   return (
     <Nav id={'navigation'} className={className}>
       <NavLink
-        title={'Jahir Fiquitiva - Home Page'}
+        title={'Jason Zhang - Home Page'}
         href={'/'}
         className={'gap-2 hocus:bg-toolbar-highlight'}
         aria-current={props.path === '/' ? 'page' : undefined}
       >
         <Logo className={'saturate-125 dark:saturate-150'} />
         <span className={'text-accent saturate-125 dark:saturate-150'}>
-          Jahir Fiquitiva
+          Jason Zhang
         </span>
       </NavLink>
       <LinksList

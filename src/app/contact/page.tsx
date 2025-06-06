@@ -33,10 +33,10 @@ export default function ContactPage() {
 }
 
 export const metadata = createMetadata({
-  title: 'Contact – Jahir Fiquitiva',
+  title: 'Contact – Jason Zhang',
   description:
     // eslint-disable-next-line @stylistic/max-len
-    'Get in touch with Jahir Fiquitiva for any kind of questions, project inquiries and/or networking.',
+    'Get in touch with Jason Zhang for any kind of questions, project inquiries and/or networking.',
   exactUrl: 'https://jahir.dev/contact',
   keywords: [
     'contact ',

@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 
 import { getTopThreeBlogPosts } from '@/actions/counters';
 import { Icon } from '@/components/atoms/icon';
-import { LinkButton } from '@/components/atoms/link-button';
+import { LinkButton, OutlinedLinkButton } from '@/components/atoms/link-button';
 import { Section } from '@/components/atoms/section';
 import { BlogPostItem } from '@/components/ui/blog/item';
 import { BlogPostItemSkeleton } from '@/components/ui/blog/item/skeleton';
@@ -30,6 +30,7 @@ const getFeaturedPosts = cache(
       );
       const randomPost =
         otherPosts[Math.floor(Math.random() * otherPosts.length)];
+      console.log(latestPost, mostViewedPost, randomPost);
       return [
         latestPost,
         sortedPosts.find((it) => mostViewedPost.slug === it.slug),
@@ -61,6 +62,7 @@ const BlogPostsListFallback = () => {
 
 const FeaturedBlogPostsList = async () => {
   const featuredPosts = await getFeaturedPosts();
+  console.log('featuredPosts', featuredPosts);
   return (
     <>
       {featuredPosts.map((post) => (
@@ -87,11 +89,11 @@ export const FeaturedBlogPosts = () => (
           'tablet-sm:w-auto tablet-sm:justify-end',
         )}
       >
-        <RSSFeedButton
+        {/* <RSSFeedButton
           className={'max-mobile-lg:justify-center max-mobile-lg:flex-1'}
-        />
+        /> */}
 
-        <LinkButton
+        <OutlinedLinkButton
           title={'View all'}
           href={'/blog'}
           className={cx(
@@ -108,7 +110,7 @@ export const FeaturedBlogPosts = () => (
             }
           />
           <span>View all</span>
-        </LinkButton>
+        </OutlinedLinkButton>
       </div>
     </div>
 

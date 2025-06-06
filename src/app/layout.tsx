@@ -15,23 +15,19 @@ import { Meta } from './meta';
 
 export const metadata = {
   ...createMetadata({
-    title: 'Jahir Fiquitiva – Frontend Software Engineer',
+    title: 'Jason Zhang – Frontend Software Engineer',
     description:
       // eslint-disable-next-line @stylistic/max-len
-      "I'm a passionate and creative frontend software engineer from Colombia 🇨🇴. Visit my website to learn more about me and my projects",
+      "I'm a passionate and creative frontend software engineer from China. Visit my website to learn more about me and my projects",
     keywords: [
-      'jahir fiquitiva',
-      'jahir',
-      'fiquitiva',
-      'jahirfiquitiva',
+      'jason zhang',
+      'jason',
       'open-source',
       'full-stack',
       'frontend',
       'software engineer',
-      'colombia',
-      'bio',
+      'china',
       'developer',
-      'portfolio',
       'development',
       'android',
       'web',
@@ -66,7 +62,7 @@ export default function RootLayout(props: PropsWithChildren) {
         <Providers>
           <Header />
           <Main>{props.children}</Main>
-          <Footer />
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>

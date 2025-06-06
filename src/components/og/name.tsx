@@ -34,7 +34,7 @@ export const Name = (props: { path?: PathName; fontSize?: number }) => {
           filter: 'saturate(1.5)',
         }}
       >
-        Jahir Fiquitiva
+        Jason Zhang
       </p>
     </div>
   );

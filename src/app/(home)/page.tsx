@@ -10,11 +10,10 @@ const jsonLd = JSON.stringify({
   url: 'https://jahir.dev',
   sameAs: ['https://jahir.dev/about'],
   logo: 'https://jahir.dev/media/brand/logo-full.png',
-  name: 'Jahir Fiquitiva',
-  description:
-    'Passionate and creative frontend software engineer from Colombia 🇨🇴',
-  email: 'hola@jahir.dev',
-  foundingDate: new Date('1997-01-28T18:30:00-05:00').toISOString(),
+  name: 'Jason Zhang',
+  description: 'Passionate and creative frontend software engineer from China',
+  email: '2405476994@qq.com',
+  foundingDate: new Date('1996-11-02T18:30:00-05:00').toISOString(),
 });
 
 export default function HomePage() {
